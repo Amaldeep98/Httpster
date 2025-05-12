@@ -39,9 +39,7 @@ body {
     z-index: 999;
     width: 100%;
 }
-.navbar:hover{
-    
-}
+
 .dot{
     background-color: black;
     height:25px;
@@ -51,14 +49,16 @@ body {
     font-size: 80px;
 }
 @media only screen and (max-width:1000px){
-    .navbar-nav{
-        display: none;
-    }
+    
     .box1{
         padding-top: 70px;
         font-size: 30px;
     }
-}
+    .navbar-nav{
+        gap: 0px
+    }
+    
+} 
 .box{
     margin:10px;
    
