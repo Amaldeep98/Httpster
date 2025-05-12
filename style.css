@@ -1,18 +1,43 @@
+body {
+    margin-top: 0px;
+
+}
 .navbar-nav{
-    gap: 80px
+    gap: 30px
 }
 
 .nav-btn{
     border: 1px solid transparent;
-    border-radius: 30px;
+    border-radius: 35px;
+    position: relative; 
 }
-
+.small::before {
+    content: ".";
+    color: rgb(15, 212, 130); 
+    font-size: 50px;
+    position: absolute;  
+    top: -35px;
+    left: 0px;
+    
+}
+.small1::before {
+    content: ".";
+    color: rgb(239, 10, 10); 
+    font-size: 50px;
+    position: absolute;  
+    top: -35px;
+    left: 0px;
+    
+}
 .nav-btn:hover{
     border: 1px solid transparent ;
     background-color:#E3E3E3;
 }
 .navbar{
     background-color: #ECECEC;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 .navbar:hover{
     
@@ -35,10 +60,8 @@
     }
 }
 .box{
-    height:330px;
-    width:445px;
     margin:10px;
-    background-color: rgb(255, 255, 255);
+   
     cursor: pointer;
 }
 .card:hover::before {
@@ -53,4 +76,20 @@
 .card:hover {
     position: relative; 
     overflow: hidden;
+}
+
+.hide-btn{
+
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    height: 40px;
+    display: none;
+}
+.card:hover .hide-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
+    height: 40px;
+    display: block;
 }
